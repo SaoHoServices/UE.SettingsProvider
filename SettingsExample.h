@@ -30,7 +30,7 @@ private:
 	FString ProjectConfigFile;
 
 public:
-	FString GetConfigName() const;
-	void PreSaveSection();
-	void PreLoadSection();
+	virtual FString GetConfigName() const override;
+	virtual void PreSaveSection() override;
+	virtual void PreLoadSection() override;
 };
